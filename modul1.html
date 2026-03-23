@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Modul 1: Obsidian ist nicht was du denkst</title>
+<meta name="description" content="Obsidian installieren, erste Vault erstellen, Markdown lernen — in 25 Minuten.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,13 +24,13 @@
   <span>Modul 1</span>
 </nav>
 
-<p class="module-counter"><span class="de">Modul 1 von 6</span><span class="en">Module 1 of 6</span></p>
+<p class="module-counter"><span class="de">Modul 1 von 6 · 🟢 Einfach · ~25 Min</span><span class="en">Module 1 of 6 · 🟢 Easy · ~25 min</span></p>
 <h1><span class="de">Obsidian ist nicht was du denkst</span><span class="en">Obsidian Is Not What You Think</span></h1>
 
 <div class="learning-goals">
   <h3><span class="de">🎯 Nach diesem Modul kannst du:</span><span class="en">🎯 After this module you can:</span></h3>
   <ul>
-    <li><span class="de">Erklären was Obsidian ist und warum es anders ist als Notion/OneNote</span><span class="en">Explain what Obsidian is and why it's different from Notion/OneNote</span></li>
+    <li><span class="de">Erklären was Obsidian ist und warum es anders ist als Notion oder OneNote</span><span class="en">Explain what Obsidian is and why it's different from Notion or OneNote</span></li>
     <li><span class="de">Obsidian installieren und deine erste Vault erstellen</span><span class="en">Install Obsidian and create your first vault</span></li>
     <li><span class="de">Eine Notiz in Markdown schreiben</span><span class="en">Write a note in Markdown</span></li>
   </ul>
@@ -40,12 +41,36 @@
 <p><span class="de">Die meisten Notiz-Apps speichern dein Wissen auf fremden Servern. Notion, Evernote, Google Docs — alles liegt in der Cloud. Wenn der Dienst abgeschaltet wird, ist dein Wissen weg.</span>
 <span class="en">Most note-taking apps store your knowledge on someone else's servers. Notion, Evernote, Google Docs — everything lives in the cloud. If the service shuts down, your knowledge is gone.</span></p>
 
-<p><span class="de"><strong>Obsidian ist anders.</strong> Deine Notizen sind einfache Textdateien auf deinem Computer. Kein Abo. Kein Lock-in. Du kannst sie mit jedem Texteditor öffnen — auch in 20 Jahren noch.</span>
-<span class="en"><strong>Obsidian is different.</strong> Your notes are plain text files on your computer. No subscription. No lock-in. You can open them with any text editor — even 20 years from now.</span></p>
+<!-- Visual Comparison -->
+<div class="comparison">
+  <div class="compare-card bad">
+    <h4><span class="de">☁️ Cloud-Notizen</span><span class="en">☁️ Cloud Notes</span></h4>
+    <ul>
+      <li><span class="de">Daten auf fremden Servern</span><span class="en">Data on someone else's servers</span></li>
+      <li><span class="de">Abo-Modell (€5-15/Monat)</span><span class="en">Subscription model (€5-15/mo)</span></li>
+      <li><span class="de">Export? Kompliziert</span><span class="en">Export? Complicated</span></li>
+      <li><span class="de">Dienst weg = Daten weg</span><span class="en">Service gone = data gone</span></li>
+    </ul>
+  </div>
+  <div class="compare-card good">
+    <h4><span class="de">💎 Obsidian</span><span class="en">💎 Obsidian</span></h4>
+    <ul>
+      <li><span class="de">Dateien auf <strong>deinem</strong> Computer</span><span class="en">Files on <strong>your</strong> computer</span></li>
+      <li><span class="de">Kostenlos für persönlichen Gebrauch</span><span class="en">Free for personal use</span></li>
+      <li><span class="de">Einfache .md Textdateien</span><span class="en">Simple .md text files</span></li>
+      <li><span class="de">Funktioniert auch in 20 Jahren</span><span class="en">Works even in 20 years</span></li>
+    </ul>
+  </div>
+</div>
+
+<div class="source">
+  <span class="de">📚 Markdown reduziert die kognitive Belastung — die Einfachheit des Formats erlaubt tiefere Auseinandersetzung mit dem Inhalt statt mit der Formatierung. (<a href="https://scholarly.so/blog/top-benefits-of-using-markdown-for-note-taking" target="_blank">Scholarly.so, 2023</a>)</span>
+  <span class="en">📚 Markdown reduces cognitive load — the simplicity of the format allows deeper engagement with content rather than formatting. (<a href="https://scholarly.so/blog/top-benefits-of-using-markdown-for-note-taking" target="_blank">Scholarly.so, 2023</a>)</span>
+</div>
 
 <div class="callout">
-  <span class="de">💡 <strong>Obsidian ist kostenlos</strong> für den persönlichen Gebrauch. Du zahlst nur, wenn du Sync zwischen Geräten oder Publish (Webseite aus deinem Vault) willst. Die meisten Nutzer brauchen das nicht.</span>
-  <span class="en">💡 <strong>Obsidian is free</strong> for personal use. You only pay if you want Sync across devices or Publish (website from your vault). Most users don't need that.</span>
+  <span class="de">💡 <strong>Obsidian ist kostenlos</strong> für den persönlichen Gebrauch. Du zahlst nur, wenn du Sync zwischen Geräten (€4/Mo) oder Publish (€8/Mo) willst. Die meisten Nutzer brauchen das nicht — du kannst auch iCloud, Dropbox oder Git für Sync nutzen.</span>
+  <span class="en">💡 <strong>Obsidian is free</strong> for personal use. You only pay for Sync across devices (€4/mo) or Publish (€8/mo). Most users don't need that — you can also use iCloud, Dropbox, or Git for syncing.</span>
 </div>
 
 <h2><span class="de">Installation</span><span class="en">Installation</span></h2>
@@ -53,42 +78,53 @@
 <ol>
   <li><span class="de">Gehe zu <a href="https://obsidian.md/download" target="_blank">obsidian.md/download</a></span>
   <span class="en">Go to <a href="https://obsidian.md/download" target="_blank">obsidian.md/download</a></span></li>
-  <li><span class="de">Lade die Version für dein Betriebssystem herunter (Windows, Mac, Linux)</span>
-  <span class="en">Download the version for your operating system (Windows, Mac, Linux)</span></li>
+  <li><span class="de">Lade die Version für dein System herunter (Windows, Mac, Linux, iOS, Android)</span>
+  <span class="en">Download for your system (Windows, Mac, Linux, iOS, Android)</span></li>
   <li><span class="de">Installiere und öffne Obsidian</span>
   <span class="en">Install and open Obsidian</span></li>
 </ol>
 
 <h2><span class="de">Deine erste Vault</span><span class="en">Your First Vault</span></h2>
 
-<p><span class="de">Eine <strong>Vault</strong> ist einfach ein Ordner auf deinem Computer. Alle deine Notizen leben dort als <code>.md</code>-Dateien (Markdown).</span>
-<span class="en">A <strong>Vault</strong> is simply a folder on your computer. All your notes live there as <code>.md</code> files (Markdown).</span></p>
+<p><span class="de">Eine <strong>Vault</strong> ist einfach ein Ordner auf deinem Computer. Alle deine Notizen leben dort als <code>.md</code>-Dateien. Nichts Magisches — du kannst den Ordner jederzeit im Finder/Explorer öffnen.</span>
+<span class="en">A <strong>Vault</strong> is simply a folder on your computer. All your notes live there as <code>.md</code> files. Nothing magical — you can open the folder in Finder/Explorer anytime.</span></p>
+
+<!-- Diagram: What a Vault looks like -->
+<div class="diagram">
+<span class="diagram-label"><span class="de">So sieht deine Vault als Ordner aus:</span><span class="en">This is what your vault looks like as a folder:</span></span>
+📁 Mein Wissen/
+├── 📄 Meine erste Notiz.md
+├── 📄 Projektideen.md
+├── 📄 Meeting-Notizen.md
+├── 📁 Daily/
+│   └── 📄 2026-03-23.md
+└── 📁 .obsidian/           ← <span class="de">Einstellungen (ignorieren)</span><span class="en">Settings (ignore this)</span></div>
 
 <ol>
   <li><span class="de">Klicke beim Start auf <strong>"Create new vault"</strong></span>
   <span class="en">Click <strong>"Create new vault"</strong> on startup</span></li>
-  <li><span class="de">Gib einen Namen ein, z.B. <code>Mein Wissen</code></span>
-  <span class="en">Enter a name, e.g., <code>My Knowledge</code></span></li>
-  <li><span class="de">Wähle einen Speicherort (z.B. <code>Dokumente/</code>)</span>
-  <span class="en">Choose a location (e.g., <code>Documents/</code>)</span></li>
+  <li><span class="de">Name: <code>Mein Wissen</code> (oder was du willst)</span>
+  <span class="en">Name: <code>My Knowledge</code> (or whatever you like)</span></li>
+  <li><span class="de">Speicherort: z.B. <code>Dokumente/</code></span>
+  <span class="en">Location: e.g., <code>Documents/</code></span></li>
   <li><span class="de">Klicke <strong>"Create"</strong></span>
   <span class="en">Click <strong>"Create"</strong></span></li>
 </ol>
 
-<div class="callout">
-  <span class="de">📁 <strong>Was gerade passiert ist:</strong> Obsidian hat einen normalen Ordner auf deinem Computer erstellt. Öffne ihn im Datei-Explorer — du siehst einen <code>.obsidian</code>-Ordner (Einstellungen) und sonst nichts. Alles was du ab jetzt schreibst, wird dort als Textdatei gespeichert.</span>
-  <span class="en">📁 <strong>What just happened:</strong> Obsidian created a normal folder on your computer. Open it in your file explorer — you'll see an <code>.obsidian</code> folder (settings) and nothing else. Everything you write from now on will be saved there as text files.</span>
+<div class="callout callout-green">
+  <span class="de">✅ <strong>Was gerade passiert ist:</strong> Obsidian hat einen normalen Ordner erstellt. Öffne ihn im Datei-Explorer — du siehst einen <code>.obsidian</code>-Ordner (Einstellungen) und sonst nichts. Alles was du schreibst, wird dort als einfache Textdatei gespeichert.</span>
+  <span class="en">✅ <strong>What just happened:</strong> Obsidian created a normal folder. Open it in your file explorer — you'll see an <code>.obsidian</code> folder (settings) and nothing else. Everything you write is saved there as a plain text file.</span>
 </div>
 
 <h2><span class="de">Deine erste Notiz</span><span class="en">Your First Note</span></h2>
 
 <ol>
-  <li><span class="de">Klicke auf das <strong>+</strong> (neue Notiz) oder drücke <code>Ctrl/Cmd + N</code></span>
-  <span class="en">Click the <strong>+</strong> (new note) or press <code>Ctrl/Cmd + N</code></span></li>
-  <li><span class="de">Gib der Notiz einen Titel, z.B. <code>Meine erste Notiz</code></span>
-  <span class="en">Give it a title, e.g., <code>My first note</code></span></li>
-  <li><span class="de">Schreibe etwas rein. Zum Beispiel:</span>
-  <span class="en">Write something. For example:</span></li>
+  <li><span class="de">Klicke auf <strong>+</strong> (links oben) oder drücke <code>Ctrl/Cmd + N</code></span>
+  <span class="en">Click <strong>+</strong> (top left) or press <code>Ctrl/Cmd + N</code></span></li>
+  <li><span class="de">Titel: <code>Meine erste Notiz</code></span>
+  <span class="en">Title: <code>My first note</code></span></li>
+  <li><span class="de">Schreibe etwas — zum Beispiel:</span>
+  <span class="en">Write something — for example:</span></li>
 </ol>
 
 <pre><code># Meine erste Notiz
@@ -96,50 +132,58 @@
 Heute habe ich Obsidian installiert.
 
 ## Was mir auffällt
-- Die App ist schnell
-- Alles ist lokal gespeichert
+- Die App ist **schnell**
+- Alles ist *lokal* gespeichert
 - Markdown ist einfacher als gedacht
 
 ## Nächste Schritte
 - [ ] Modul 2 durcharbeiten
-- [ ] Meine bestehenden Notizen migrieren</code></pre>
+- [ ] Bestehende Notizen migrieren</code></pre>
 
 <h2><span class="de">Markdown in 5 Minuten</span><span class="en">Markdown in 5 Minutes</span></h2>
 
-<p><span class="de">Markdown ist eine einfache Formatierungssprache. Du musst nur 6 Dinge kennen:</span>
-<span class="en">Markdown is a simple formatting language. You only need to know 6 things:</span></p>
+<p><span class="de">Markdown ist <strong>keine Programmiersprache</strong>. Es ist eine einfache Art, Text zu formatieren — mit Zeichen die du schon kennst. Du musst nur 6 Dinge kennen:</span>
+<span class="en">Markdown is <strong>not a programming language</strong>. It's a simple way to format text — with characters you already know. You only need 6 things:</span></p>
 
 <table>
-  <tr><th>Markdown</th><th><span class="de">Ergebnis</span><span class="en">Result</span></th></tr>
-  <tr><td><code># Überschrift</code></td><td><span class="de">Große Überschrift</span><span class="en">Heading</span></td></tr>
-  <tr><td><code>## Unterüberschrift</code></td><td><span class="de">Kleinere Überschrift</span><span class="en">Subheading</span></td></tr>
-  <tr><td><code>**fett**</code></td><td><strong><span class="de">fett</span><span class="en">bold</span></strong></td></tr>
-  <tr><td><code>*kursiv*</code></td><td><em><span class="de">kursiv</span><span class="en">italic</span></em></td></tr>
-  <tr><td><code>- Punkt</code></td><td><span class="de">Aufzählung</span><span class="en">Bullet list</span></td></tr>
-  <tr><td><code>- [ ] Todo</code></td><td><span class="de">Checkbox</span><span class="en">Checkbox</span></td></tr>
+  <tr><th><span class="de">Du schreibst</span><span class="en">You type</span></th><th><span class="de">Ergebnis</span><span class="en">Result</span></th><th><span class="de">Wann nutzen</span><span class="en">When to use</span></th></tr>
+  <tr><td><code># Überschrift</code></td><td><strong style="font-size:1.1em;"><span class="de">Überschrift</span><span class="en">Heading</span></strong></td><td><span class="de">Titel einer Notiz</span><span class="en">Note title</span></td></tr>
+  <tr><td><code>## Unterüberschrift</code></td><td><strong><span class="de">Unterüberschrift</span><span class="en">Subheading</span></strong></td><td><span class="de">Abschnitte</span><span class="en">Sections</span></td></tr>
+  <tr><td><code>**fett**</code></td><td><strong><span class="de">fett</span><span class="en">bold</span></strong></td><td><span class="de">Wichtiges hervorheben</span><span class="en">Highlight important</span></td></tr>
+  <tr><td><code>*kursiv*</code></td><td><em><span class="de">kursiv</span><span class="en">italic</span></em></td><td><span class="de">Betonung</span><span class="en">Emphasis</span></td></tr>
+  <tr><td><code>- Punkt</code></td><td><span class="de">• Aufzählung</span><span class="en">• Bullet list</span></td><td><span class="de">Listen</span><span class="en">Lists</span></td></tr>
+  <tr><td><code>- [ ] Todo</code></td><td><span class="de">☐ Checkbox</span><span class="en">☐ Checkbox</span></td><td><span class="de">Aufgaben</span><span class="en">Tasks</span></td></tr>
 </table>
 
-<div class="callout" style="background: rgba(63, 185, 80, 0.1); border-left-color: var(--green);">
-  <span class="de">✅ <strong>Das reicht.</strong> Wirklich. Mehr Markdown brauchst du nicht um loszulegen. Den Rest lernst du nebenbei.</span>
-  <span class="en">✅ <strong>That's enough.</strong> Really. You don't need more Markdown to get started. You'll learn the rest along the way.</span>
+<div class="callout callout-green">
+  <span class="de">✅ <strong>Das reicht.</strong> Wirklich. Mehr Markdown brauchst du nicht um loszulegen. Den Rest lernst du nebenbei — Obsidian zeigt dir eine Live-Vorschau während du tippst.</span>
+  <span class="en">✅ <strong>That's enough.</strong> Really. You don't need more Markdown to get started. You'll learn the rest along the way — Obsidian shows a live preview as you type.</span>
 </div>
+
+<p><span class="de"><strong>Bonus-Tipp:</strong> Drücke <code>Ctrl/Cmd + E</code> um zwischen Bearbeitungsmodus (Markdown sehen) und Lesemodus (formatiert sehen) zu wechseln.</span>
+<span class="en"><strong>Bonus tip:</strong> Press <code>Ctrl/Cmd + E</code> to switch between editing mode (see Markdown) and reading mode (see formatted).</span></p>
 
 <h2><span class="de">🏋️ Challenge</span><span class="en">🏋️ Challenge</span></h2>
 
 <ol>
-  <li><span class="de">Installiere Obsidian und erstelle eine Vault namens <code>Mein Wissen</code></span>
-  <span class="en">Install Obsidian and create a vault called <code>My Knowledge</code></span></li>
-  <li><span class="de">Erstelle 3 Notizen zu Themen die dich interessieren (je 3-5 Sätze)</span>
-  <span class="en">Create 3 notes about topics that interest you (3-5 sentences each)</span></li>
-  <li><span class="de">Nutze mindestens 3 verschiedene Markdown-Elemente (Überschrift, fett, Liste)</span>
-  <span class="en">Use at least 3 different Markdown elements (heading, bold, list)</span></li>
+  <li><span class="de">Installiere Obsidian und erstelle eine Vault</span>
+  <span class="en">Install Obsidian and create a vault</span></li>
+  <li><span class="de">Erstelle <strong>3 Notizen</strong> zu Themen die dich interessieren (je 3-5 Sätze)</span>
+  <span class="en">Create <strong>3 notes</strong> about topics that interest you (3-5 sentences each)</span></li>
+  <li><span class="de">Nutze mindestens 3 Markdown-Elemente (Überschrift, fett, Liste)</span>
+  <span class="en">Use at least 3 Markdown elements (heading, bold, list)</span></li>
   <li><span class="de">Öffne den Vault-Ordner im Datei-Explorer — siehst du deine <code>.md</code>-Dateien?</span>
   <span class="en">Open the vault folder in your file explorer — can you see your <code>.md</code> files?</span></li>
 </ol>
 
+<div class="callout callout-green">
+  <span class="de">✅ <strong>Erfolgskriterium:</strong> Du hast 3 Notizen in deiner Vault und kannst sie sowohl in Obsidian als auch im Datei-Explorer sehen.</span>
+  <span class="en">✅ <strong>Success criterion:</strong> You have 3 notes in your vault and can see them both in Obsidian and in your file explorer.</span>
+</div>
+
 <div class="nav-buttons">
   <a href="curriculum.html" class="btn-secondary"><span class="de">← Lernplan</span><span class="en">← Curriculum</span></a>
-  <a href="modul2.html" class="btn-primary"><span class="de">Modul 2 →</span><span class="en">Module 2 →</span></a>
+  <a href="modul2.html" class="btn-primary"><span class="de">Modul 2: Verlinken statt Ordnen →</span><span class="en">Module 2: Link, Don't File →</span></a>
 </div>
 
 </main>
@@ -149,6 +193,7 @@ Heute habe ich Obsidian installiert.
   <span class="en">Part of <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
 </footer>
 
+<script src="glossary.js"></script>
 <script>
 function setLang(lang) {
   document.documentElement.lang = lang;
@@ -157,6 +202,7 @@ function setLang(lang) {
   document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
   document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
   try { localStorage.setItem('lang', lang); } catch(e) {}
+  initGlossary();
 }
 (function() {
   var lang = 'de'; try { lang = localStorage.getItem('lang') || 'de'; } catch(e) {}
