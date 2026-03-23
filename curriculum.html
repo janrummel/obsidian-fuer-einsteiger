@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lernplan — Obsidian für Einsteiger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link"><span class="de">Zum Inhalt</span><span class="en">Skip to content</span></a>
+
+<div class="lang-switch" role="navigation" aria-label="Language">
+  <button id="btn-de" class="active" onclick="setLang('de')">DE</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<main id="main">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html"><span class="de">Start</span><span class="en">Home</span></a> ›
+  <span class="de">Lernplan</span><span class="en">Curriculum</span>
+</nav>
+
+<h1><span class="de">Lernplan</span><span class="en">Curriculum</span></h1>
+<p class="subtitle">
+  <span class="de">6 Module · ~3 Stunden · Kostenlos · Kein Vorwissen nötig</span>
+  <span class="en">6 modules · ~3 hours · Free · No prior knowledge needed</span>
+</p>
+
+<div class="module-list">
+
+  <a href="modul1.html" class="module-card">
+    <div class="module-number">01</div>
+    <div class="module-info">
+      <h3><span class="de">Obsidian ist nicht was du denkst</span><span class="en">Obsidian Is Not What You Think</span></h3>
+      <p><span class="de">Installation, erste Vault, erste Notiz, Markdown-Basics. In 20 Minuten bist du drin.</span>
+      <span class="en">Installation, first vault, first note, Markdown basics. You're in within 20 minutes.</span></p>
+      <span class="meta">~25 min</span>
+    </div>
+  </a>
+
+  <a href="modul2.html" class="module-card">
+    <div class="module-number">02</div>
+    <div class="module-info">
+      <h3><span class="de">Verlinken statt Ordnen</span><span class="en">Link, Don't File</span></h3>
+      <p><span class="de">[[Wikilinks]], Graph View, Backlinks. Warum Ordner-Denken dein Wissen einschränkt.</span>
+      <span class="en">[[Wikilinks]], Graph View, Backlinks. Why folder-thinking limits your knowledge.</span></p>
+      <span class="meta">~25 min</span>
+    </div>
+  </a>
+
+  <a href="modul3.html" class="module-card">
+    <div class="module-number">03</div>
+    <div class="module-info">
+      <h3><span class="de">Tägliche Praxis</span><span class="en">Daily Practice</span></h3>
+      <p><span class="de">Daily Notes, Templates, Obsidian als Gewohnheit. Dein Vault wächst von allein.</span>
+      <span class="en">Daily Notes, Templates, Obsidian as a habit. Your vault grows on its own.</span></p>
+      <span class="meta">~30 min</span>
+    </div>
+  </a>
+
+  <a href="modul4.html" class="module-card">
+    <div class="module-number">04</div>
+    <div class="module-info">
+      <h3><span class="de">Wiederfinden statt Suchen</span><span class="en">Retrieve, Don't Search</span></h3>
+      <p><span class="de">Tags, Suche, Bookmarks, Properties. Dein Vault wird zum Nachschlagewerk.</span>
+      <span class="en">Tags, Search, Bookmarks, Properties. Your vault becomes a reference system.</span></p>
+      <span class="meta">~30 min</span>
+    </div>
+  </a>
+
+  <a href="modul5.html" class="module-card">
+    <div class="module-number">05</div>
+    <div class="module-info">
+      <h3><span class="de">Dein System bauen</span><span class="en">Build Your System</span></h3>
+      <p><span class="de">MOCs, PARA (vereinfacht), Canvas. Von losen Notizen zum persönlichen Wissenssystem.</span>
+      <span class="en">MOCs, PARA (simplified), Canvas. From scattered notes to a personal knowledge system.</span></p>
+      <span class="meta">~35 min</span>
+    </div>
+  </a>
+
+  <a href="modul6.html" class="module-card">
+    <div class="module-number">06</div>
+    <div class="module-info">
+      <h3><span class="de">Obsidian + AI</span><span class="en">Obsidian + AI</span></h3>
+      <p><span class="de">Dein Vault als Wissensbasis für AI-Agents. Community Plugins. Dein Gameplan.</span>
+      <span class="en">Your vault as a knowledge base for AI agents. Community Plugins. Your gameplan.</span></p>
+      <span class="meta">~30 min</span>
+    </div>
+  </a>
+
+</div>
+
+<div style="text-align:center;margin-top:2rem;">
+  <a href="modul1.html" class="btn-primary">
+    <span class="de">Mit Modul 1 starten →</span>
+    <span class="en">Start Module 1 →</span>
+  </a>
+</div>
+
+</main>
+
+<footer role="contentinfo">
+  <span class="de">Teil von <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+  <span class="en">Part of <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+  <div class="footer-line">
+    <a href="https://linkedin.com/in/janrummel">LinkedIn</a> ·
+    <a href="https://github.com/janrummel/obsidian-fuer-einsteiger">GitHub</a>
+  </div>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+  document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
+  try { localStorage.setItem('lang', lang); } catch(e) {}
+}
+(function() {
+  var lang = 'de';
+  try { lang = localStorage.getItem('lang') || 'de'; } catch(e) {}
+  setLang(lang);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 2: Verlinken statt Ordnen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link"><span class="de">Zum Inhalt</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" style="--progress:33%" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" aria-label="Progress"></div>
+
+<div class="lang-switch" role="navigation" aria-label="Language">
+  <button id="btn-de" class="active" onclick="setLang('de')">DE</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<main id="main">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html"><span class="de">Start</span><span class="en">Home</span></a> ›
+  <a href="curriculum.html"><span class="de">Lernplan</span><span class="en">Curriculum</span></a> ›
+  <span>Modul 2</span>
+</nav>
+
+<p class="module-counter"><span class="de">Modul 2 von 6</span><span class="en">Module 2 of 6</span></p>
+<h1><span class="de">Verlinken statt Ordnen</span><span class="en">Link, Don't File</span></h1>
+
+<div class="learning-goals">
+  <h3><span class="de">🎯 Nach diesem Modul kannst du:</span><span class="en">🎯 After this module you can:</span></h3>
+  <ul>
+    <li><span class="de">Wikilinks zwischen Notizen erstellen</span><span class="en">Create wikilinks between notes</span></li>
+    <li><span class="de">Den Graph View nutzen um Zusammenhänge zu sehen</span><span class="en">Use Graph View to see connections</span></li>
+    <li><span class="de">Erklären warum Verlinken besser ist als Sortieren</span><span class="en">Explain why linking is better than sorting</span></li>
+  </ul>
+</div>
+
+<h2><span class="de">Das Ordner-Problem</span><span class="en">The Folder Problem</span></h2>
+
+<p><span class="de">Du kennst das: Eine Notiz über ein Meeting mit dem Kunden. Kommt die in den Ordner <code>Meetings/</code>, <code>Kunden/</code> oder <code>Projekte/</code>? Egal wo du sie hinlegst — du wirst sie dort nicht suchen wo du sie brauchst.</span>
+<span class="en">You know this: A note about a meeting with a client. Does it go in <code>Meetings/</code>, <code>Clients/</code>, or <code>Projects/</code>? No matter where you put it — you won't look where you need it.</span></p>
+
+<p><span class="de"><strong>Ordner zwingen dich, dein Wissen in Schubladen zu stecken.</strong> Aber Wissen ist kein Schrank — es ist ein Netz.</span>
+<span class="en"><strong>Folders force you to put your knowledge in drawers.</strong> But knowledge isn't a cabinet — it's a network.</span></p>
+
+<h2><span class="de">Wikilinks: Die Lösung</span><span class="en">Wikilinks: The Solution</span></h2>
+
+<p><span class="de">In Obsidian verlinkst du Notizen mit doppelten eckigen Klammern:</span>
+<span class="en">In Obsidian, you link notes with double square brackets:</span></p>
+
+<pre><code>Heute Meeting mit [[Max Müller]] über [[Projekt Alpha]].
+Entscheidung: Wir nutzen [[Obsidian]] statt Confluence.</code></pre>
+
+<p><span class="de">Jeder <code>[[Link]]</code> erzeugt automatisch eine Verbindung. Klickst du drauf, springst du zur Notiz. Existiert sie noch nicht? Obsidian erstellt sie für dich.</span>
+<span class="en">Every <code>[[Link]]</code> automatically creates a connection. Click it, and you jump to the note. Doesn't exist yet? Obsidian creates it for you.</span></p>
+
+<div class="callout">
+  <span class="de">💡 <strong>Tipp:</strong> Tippe <code>[[</code> und Obsidian zeigt dir automatisch alle existierenden Notizen. Du musst den Namen nicht auswendig kennen.</span>
+  <span class="en">💡 <strong>Tip:</strong> Type <code>[[</code> and Obsidian automatically shows all existing notes. You don't need to memorize names.</span>
+</div>
+
+<h2><span class="de">Backlinks: Die andere Richtung</span><span class="en">Backlinks: The Other Direction</span></h2>
+
+<p><span class="de">Das Geniale: Wenn du in einer Notiz <code>[[Max Müller]]</code> schreibst, sieht die Notiz "Max Müller" automatisch, wer auf sie verlinkt. Das sind <strong>Backlinks</strong>.</span>
+<span class="en">The genius part: When you write <code>[[Max Müller]]</code> in a note, the "Max Müller" note automatically sees who links to it. These are <strong>Backlinks</strong>.</span></p>
+
+<p><span class="de">Öffne die rechte Sidebar → <strong>Backlinks</strong>. Du siehst jede Notiz die auf die aktuelle verweist — ohne dass du irgendetwas einrichten musst.</span>
+<span class="en">Open the right sidebar → <strong>Backlinks</strong>. You see every note that refers to the current one — without setting up anything.</span></p>
+
+<h2><span class="de">Graph View: Dein Wissensnetz sehen</span><span class="en">Graph View: See Your Knowledge Network</span></h2>
+
+<p><span class="de">Drücke <code>Ctrl/Cmd + G</code> oder klicke auf das Graph-Icon in der Sidebar. Du siehst alle deine Notizen als Punkte und alle Verbindungen als Linien.</span>
+<span class="en">Press <code>Ctrl/Cmd + G</code> or click the graph icon in the sidebar. You see all your notes as dots and all connections as lines.</span></p>
+
+<p><span class="de">Am Anfang sieht der Graph leer aus. <strong>Das ist normal.</strong> Nach 50-100 Notizen wird er spannend — und nach 500 ist er magisch.</span>
+<span class="en">At first, the graph looks empty. <strong>That's normal.</strong> After 50-100 notes it gets interesting — and after 500 it's magical.</span></p>
+
+<h2><span class="de">Wann doch Ordner?</span><span class="en">When to Use Folders?</span></h2>
+
+<p><span class="de">Ordner sind nicht verboten — sie sind nur nicht das Hauptorganisationsprinzip. Sinnvolle Ordner:</span>
+<span class="en">Folders aren't forbidden — they're just not the main organizing principle. Useful folders:</span></p>
+
+<ul>
+  <li><span class="de"><code>Inbox/</code> — Alles Neue landet hier</span><span class="en"><code>Inbox/</code> — Everything new goes here</span></li>
+  <li><span class="de"><code>Templates/</code> — Vorlagen</span><span class="en"><code>Templates/</code> — Templates</span></li>
+  <li><span class="de"><code>Attachments/</code> — Bilder, PDFs</span><span class="en"><code>Attachments/</code> — Images, PDFs</span></li>
+</ul>
+
+<p><span class="de"><strong>Faustregel:</strong> Benutze Ordner für den <em>Typ</em> einer Notiz (Template, Anhang), nicht für das <em>Thema</em> (Projekt X, Kunde Y).</span>
+<span class="en"><strong>Rule of thumb:</strong> Use folders for the <em>type</em> of a note (template, attachment), not for the <em>topic</em> (Project X, Client Y).</span></p>
+
+<h2><span class="de">🏋️ Challenge</span><span class="en">🏋️ Challenge</span></h2>
+
+<ol>
+  <li><span class="de">Öffne deine 3 Notizen aus Modul 1</span><span class="en">Open your 3 notes from Module 1</span></li>
+  <li><span class="de">Füge mindestens 3 [[Wikilinks]] ein die Notizen untereinander verbinden</span><span class="en">Add at least 3 [[Wikilinks]] that connect notes to each other</span></li>
+  <li><span class="de">Erstelle 2 neue Notizen die durch Links entstanden sind (einfach auf den Link klicken)</span><span class="en">Create 2 new notes that were born from links (just click the link)</span></li>
+  <li><span class="de">Öffne den Graph View (<code>Cmd/Ctrl + G</code>) — siehst du die Verbindungen?</span><span class="en">Open Graph View (<code>Cmd/Ctrl + G</code>) — can you see the connections?</span></li>
+  <li><span class="de">Prüfe die Backlinks einer Notiz (rechte Sidebar)</span><span class="en">Check the backlinks of a note (right sidebar)</span></li>
+</ol>
+
+<div class="nav-buttons">
+  <a href="modul1.html" class="btn-secondary"><span class="de">← Modul 1</span><span class="en">← Module 1</span></a>
+  <a href="modul3.html" class="btn-primary"><span class="de">Modul 3 →</span><span class="en">Module 3 →</span></a>
+</div>
+
+</main>
+
+<footer role="contentinfo">
+  <span class="de">Teil von <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+  <span class="en">Part of <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+  document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
+  try { localStorage.setItem('lang', lang); } catch(e) {}
+}
+(function() {
+  var lang = 'de'; try { lang = localStorage.getItem('lang') || 'de'; } catch(e) {}
+  setLang(lang);
+})();
+</script>
+</body>
+</html>

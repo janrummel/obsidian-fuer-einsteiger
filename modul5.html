@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 5: Dein System bauen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link"><span class="de">Zum Inhalt</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" style="--progress:83%" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Progress"></div>
+
+<div class="lang-switch" role="navigation" aria-label="Language">
+  <button id="btn-de" class="active" onclick="setLang('de')">DE</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<main id="main">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html"><span class="de">Start</span><span class="en">Home</span></a> ›
+  <a href="curriculum.html"><span class="de">Lernplan</span><span class="en">Curriculum</span></a> ›
+  <span>Modul 5</span>
+</nav>
+
+<p class="module-counter"><span class="de">Modul 5 von 6</span><span class="en">Module 5 of 6</span></p>
+<h1><span class="de">Dein System bauen</span><span class="en">Build Your System</span></h1>
+
+<div class="learning-goals">
+  <h3><span class="de">🎯 Nach diesem Modul kannst du:</span><span class="en">🎯 After this module you can:</span></h3>
+  <ul>
+    <li><span class="de">Eine MOC (Map of Content) als Übersichtsnotiz erstellen</span><span class="en">Create a MOC (Map of Content) as an overview note</span></li>
+    <li><span class="de">Die PARA-Methode vereinfacht für deinen Vault anwenden</span><span class="en">Apply the PARA method simplified for your vault</span></li>
+    <li><span class="de">Canvas für visuelles Denken nutzen</span><span class="en">Use Canvas for visual thinking</span></li>
+  </ul>
+</div>
+
+<h2><span class="de">MOCs: Deine Landkarten</span><span class="en">MOCs: Your Maps</span></h2>
+
+<p><span class="de">Eine <strong>Map of Content (MOC)</strong> ist eine Notiz die andere Notizen zu einem Thema zusammenfasst. Stell sie dir als Inhaltsverzeichnis vor — aber eines das du selbst baust und das mitwächst.</span>
+<span class="en">A <strong>Map of Content (MOC)</strong> is a note that collects other notes about a topic. Think of it as a table of contents — but one you build yourself and that grows with you.</span></p>
+
+<p><span class="de">Beispiel — <code>MOC Projektmanagement.md</code>:</span>
+<span class="en">Example — <code>MOC Project Management.md</code>:</span></p>
+
+<pre><code># MOC Projektmanagement
+
+## Methoden
+- [[Kanban Basics]]
+- [[Scrum in 5 Minuten]]
+- [[Agile vs. Wasserfall]]
+
+## Tools
+- [[GitHub Projects]]
+- [[Obsidian als Projektboard]]
+
+## Erfahrungen
+- [[Projekt Alpha — Lessons Learned]]
+- [[Warum unser Sprint-Planning nicht funktioniert hat]]
+
+## Offene Fragen
+- Wie skaliert Kanban für 3+ Teams?
+- Brauchen wir wirklich Story Points?</code></pre>
+
+<p><span class="de"><strong>Wann eine MOC erstellen?</strong> Wenn du merkst dass du zu einem Thema 5+ Notizen hast und den Überblick verlierst.</span>
+<span class="en"><strong>When to create a MOC?</strong> When you notice you have 5+ notes on a topic and are losing the overview.</span></p>
+
+<h2><span class="de">PARA — vereinfacht</span><span class="en">PARA — simplified</span></h2>
+
+<p><span class="de">PARA ist ein System von Tiago Forte. Die Originalversion ist komplex — hier die vereinfachte Version die tatsächlich funktioniert:</span>
+<span class="en">PARA is a system by Tiago Forte. The original is complex — here's the simplified version that actually works:</span></p>
+
+<table>
+  <tr><th><span class="de">Ordner</span><span class="en">Folder</span></th><th><span class="de">Was kommt rein?</span><span class="en">What goes in?</span></th><th><span class="de">Beispiel</span><span class="en">Example</span></th></tr>
+  <tr><td><code>Projects/</code></td><td><span class="de">Aktive Projekte mit Deadline</span><span class="en">Active projects with deadlines</span></td><td><span class="de">Umzug, Kurs erstellen</span><span class="en">Moving, creating a course</span></td></tr>
+  <tr><td><code>Areas/</code></td><td><span class="de">Bereiche die du dauerhaft pflegst</span><span class="en">Areas you maintain long-term</span></td><td><span class="de">Gesundheit, Finanzen, Karriere</span><span class="en">Health, Finances, Career</span></td></tr>
+  <tr><td><code>Resources/</code></td><td><span class="de">Referenzmaterial</span><span class="en">Reference material</span></td><td><span class="de">Rezepte, Checklisten, Anleitungen</span><span class="en">Recipes, Checklists, How-tos</span></td></tr>
+  <tr><td><code>Archive/</code></td><td><span class="de">Abgeschlossenes</span><span class="en">Completed items</span></td><td><span class="de">Projekt von 2024, alte Kurse</span><span class="en">2024 project, old courses</span></td></tr>
+</table>
+
+<div class="callout">
+  <span class="de">💡 <strong>Du musst nicht PARA nutzen.</strong> Es ist ein Vorschlag, kein Gesetz. Viele erfolgreiche Vault-Nutzer haben 0 Ordner und navigieren nur über Links + Suche. Finde was für dich funktioniert.</span>
+  <span class="en">💡 <strong>You don't have to use PARA.</strong> It's a suggestion, not a law. Many successful vault users have 0 folders and navigate purely via links + search. Find what works for you.</span>
+</div>
+
+<h2><span class="de">Canvas: Visuell denken</span><span class="en">Canvas: Think Visually</span></h2>
+
+<p><span class="de">Canvas ist ein Whiteboard in Obsidian. Du kannst Notizen, Bilder und Textkarten auf einer Fläche anordnen und mit Linien verbinden.</span>
+<span class="en">Canvas is a whiteboard in Obsidian. You can arrange notes, images, and text cards on a surface and connect them with lines.</span></p>
+
+<p><span class="de"><strong>Erstellen:</strong> <code>Ctrl/Cmd + P</code> → "Create new canvas" → Name eingeben.</span>
+<span class="en"><strong>Create:</strong> <code>Ctrl/Cmd + P</code> → "Create new canvas" → enter name.</span></p>
+
+<p><span class="de">Gute Anwendungen:</span>
+<span class="en">Good use cases:</span></p>
+
+<ul>
+  <li><span class="de">Brainstorming (Ideen als Karten, Gruppierung per Drag & Drop)</span><span class="en">Brainstorming (ideas as cards, group by drag & drop)</span></li>
+  <li><span class="de">Projekt-Überblick (Meilensteine visuell verbinden)</span><span class="en">Project overview (visually connect milestones)</span></li>
+  <li><span class="de">Lernlandkarte (Themen und ihre Zusammenhänge sehen)</span><span class="en">Learning map (see topics and their connections)</span></li>
+</ul>
+
+<h2><span class="de">Dein System finden</span><span class="en">Finding Your System</span></h2>
+
+<p><span class="de">Es gibt kein perfektes System — nur <em>dein</em> System. Drei Fragen die helfen:</span>
+<span class="en">There's no perfect system — only <em>your</em> system. Three questions that help:</span></p>
+
+<ol>
+  <li><span class="de"><strong>Was ist dein Einstiegspunkt?</strong> Daily Note? Eine MOC? Die Suche?</span>
+  <span class="en"><strong>What's your entry point?</strong> Daily Note? A MOC? Search?</span></li>
+  <li><span class="de"><strong>Wie findest du Dinge wieder?</strong> Links? Tags? Ordner? Suche?</span>
+  <span class="en"><strong>How do you retrieve things?</strong> Links? Tags? Folders? Search?</span></li>
+  <li><span class="de"><strong>Was nervt dich gerade?</strong> Das ist dein nächster Optimierungspunkt.</span>
+  <span class="en"><strong>What annoys you right now?</strong> That's your next optimization point.</span></li>
+</ol>
+
+<h2><span class="de">🏋️ Challenge</span><span class="en">🏋️ Challenge</span></h2>
+
+<ol>
+  <li><span class="de">Erstelle eine MOC zu einem Thema das dich interessiert (mindestens 5 Links)</span>
+  <span class="en">Create a MOC about a topic that interests you (at least 5 links)</span></li>
+  <li><span class="de">Erstelle ein Canvas mit mindestens 5 Karten und 3 Verbindungen</span>
+  <span class="en">Create a Canvas with at least 5 cards and 3 connections</span></li>
+  <li><span class="de">Entscheide: Nutzt du Ordner (PARA-Style) oder navigierst du über Links? Schreibe deine Entscheidung als Notiz auf.</span>
+  <span class="en">Decide: Do you use folders (PARA-style) or navigate via links? Write your decision as a note.</span></li>
+</ol>
+
+<div class="nav-buttons">
+  <a href="modul4.html" class="btn-secondary"><span class="de">← Modul 4</span><span class="en">← Module 4</span></a>
+  <a href="modul6.html" class="btn-primary"><span class="de">Modul 6 →</span><span class="en">Module 6 →</span></a>
+</div>
+
+</main>
+
+<footer role="contentinfo">
+  <span class="de">Teil von <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+  <span class="en">Part of <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+  document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
+  try { localStorage.setItem('lang', lang); } catch(e) {}
+}
+(function() {
+  var lang = 'de'; try { lang = localStorage.getItem('lang') || 'de'; } catch(e) {}
+  setLang(lang);
+})();
+</script>
+</body>
+</html>

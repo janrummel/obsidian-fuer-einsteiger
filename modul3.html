@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modul 3: Tägliche Praxis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main" class="skip-link"><span class="de">Zum Inhalt</span><span class="en">Skip to content</span></a>
+<div class="progress-bar" style="--progress:50%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" aria-label="Progress"></div>
+
+<div class="lang-switch" role="navigation" aria-label="Language">
+  <button id="btn-de" class="active" onclick="setLang('de')">DE</button>
+  <button id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<main id="main">
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="index.html"><span class="de">Start</span><span class="en">Home</span></a> ›
+  <a href="curriculum.html"><span class="de">Lernplan</span><span class="en">Curriculum</span></a> ›
+  <span>Modul 3</span>
+</nav>
+
+<p class="module-counter"><span class="de">Modul 3 von 6</span><span class="en">Module 3 of 6</span></p>
+<h1><span class="de">Tägliche Praxis</span><span class="en">Daily Practice</span></h1>
+
+<div class="learning-goals">
+  <h3><span class="de">🎯 Nach diesem Modul kannst du:</span><span class="en">🎯 After this module you can:</span></h3>
+  <ul>
+    <li><span class="de">Daily Notes einrichten und als Gewohnheit nutzen</span><span class="en">Set up Daily Notes and use them as a habit</span></li>
+    <li><span class="de">Templates erstellen für wiederkehrende Notizen</span><span class="en">Create templates for recurring notes</span></li>
+    <li><span class="de">Obsidian in deinen Alltag integrieren</span><span class="en">Integrate Obsidian into your daily routine</span></li>
+  </ul>
+</div>
+
+<h2><span class="de">Daily Notes: Dein Einstiegspunkt</span><span class="en">Daily Notes: Your Entry Point</span></h2>
+
+<p><span class="de">Die beste Gewohnheit in Obsidian: Jeden Tag eine Notiz. Nicht weil du musst, sondern weil es den Einstieg trivial macht. Du öffnest Obsidian, drückst einen Button, und du bist drin.</span>
+<span class="en">The best habit in Obsidian: One note every day. Not because you have to, but because it makes getting started trivial. Open Obsidian, press a button, and you're in.</span></p>
+
+<h3><span class="de">Einrichten</span><span class="en">Setup</span></h3>
+
+<ol>
+  <li><span class="de">Öffne <strong>Einstellungen</strong> (⚙️ unten links)</span><span class="en">Open <strong>Settings</strong> (⚙️ bottom left)</span></li>
+  <li><span class="de">Gehe zu <strong>Core Plugins → Daily Notes</strong></span><span class="en">Go to <strong>Core Plugins → Daily Notes</strong></span></li>
+  <li><span class="de">Aktiviere den Plugin (Toggle)</span><span class="en">Enable the plugin (toggle)</span></li>
+  <li><span class="de">Setze das Datums-Format: <code>YYYY-MM-DD</code> (z.B. 2026-03-23)</span><span class="en">Set date format: <code>YYYY-MM-DD</code> (e.g., 2026-03-23)</span></li>
+  <li><span class="de">Setze den Ordner: <code>Daily/</code></span><span class="en">Set folder: <code>Daily/</code></span></li>
+</ol>
+
+<p><span class="de">Ab jetzt: Klicke auf das <strong>Kalender-Icon</strong> in der Sidebar oder drücke <code>Ctrl/Cmd + Shift + D</code> → Obsidian erstellt automatisch eine Tagesnotiz.</span>
+<span class="en">From now on: Click the <strong>calendar icon</strong> in the sidebar or press <code>Ctrl/Cmd + Shift + D</code> → Obsidian creates today's note automatically.</span></p>
+
+<h2><span class="de">Templates: Struktur ohne Arbeit</span><span class="en">Templates: Structure Without Effort</span></h2>
+
+<p><span class="de">Templates sind Vorlagen die automatisch eingefügt werden. Du schreibst sie einmal und nutzt sie immer wieder.</span>
+<span class="en">Templates are pre-written structures that get inserted automatically. Write them once, use them forever.</span></p>
+
+<h3><span class="de">Einrichten</span><span class="en">Setup</span></h3>
+
+<ol>
+  <li><span class="de"><strong>Einstellungen → Core Plugins → Templates</strong> aktivieren</span><span class="en">Enable <strong>Settings → Core Plugins → Templates</strong></span></li>
+  <li><span class="de">Template-Ordner setzen: <code>Templates/</code></span><span class="en">Set template folder: <code>Templates/</code></span></li>
+  <li><span class="de">Erstelle den Ordner <code>Templates/</code> in deinem Vault</span><span class="en">Create the folder <code>Templates/</code> in your vault</span></li>
+</ol>
+
+<h3><span class="de">Beispiel: Daily Note Template</span><span class="en">Example: Daily Note Template</span></h3>
+
+<p><span class="de">Erstelle die Datei <code>Templates/Daily Note.md</code>:</span>
+<span class="en">Create the file <code>Templates/Daily Note.md</code>:</span></p>
+
+<pre><code># {{date}}
+
+## Was heute wichtig war
+-
+
+## Notizen
+-
+
+## Aufgaben
+- [ ]
+
+## Links zu gestern
+[[{{date:YYYY-MM-DD|-1}}]]</code></pre>
+
+<p><span class="de">Jetzt in den <strong>Daily Notes Einstellungen</strong> → Template-Datei setzen: <code>Templates/Daily Note</code>. Ab sofort bekommt jede neue Tagesnotiz diese Struktur automatisch.</span>
+<span class="en">Now in <strong>Daily Notes settings</strong> → Set template file: <code>Templates/Daily Note</code>. From now on, every new daily note gets this structure automatically.</span></p>
+
+<h3><span class="de">Weitere nützliche Templates</span><span class="en">More Useful Templates</span></h3>
+
+<p><span class="de"><strong>Meeting-Template</strong> (<code>Templates/Meeting.md</code>):</span>
+<span class="en"><strong>Meeting Template</strong> (<code>Templates/Meeting.md</code>):</span></p>
+
+<pre><code># Meeting: {{title}}
+**Datum:** {{date}}
+**Teilnehmer:**
+
+## Agenda
+1.
+
+## Notizen
+-
+
+## Entscheidungen
+-
+
+## Nächste Schritte
+- [ ]</code></pre>
+
+<p><span class="de"><strong>Template einfügen:</strong> In einer neuen Notiz → <code>Ctrl/Cmd + P</code> → "Insert template" → Template auswählen.</span>
+<span class="en"><strong>Insert template:</strong> In a new note → <code>Ctrl/Cmd + P</code> → "Insert template" → select template.</span></p>
+
+<h2><span class="de">Obsidian als Gewohnheit</span><span class="en">Obsidian as a Habit</span></h2>
+
+<p><span class="de">Das Geheimnis ist nicht die perfekte Struktur. Es ist die <strong>Regelmäßigkeit</strong>. Drei Tipps:</span>
+<span class="en">The secret isn't the perfect structure. It's <strong>consistency</strong>. Three tips:</span></p>
+
+<ol>
+  <li><span class="de"><strong>Obsidian beim Hochfahren öffnen.</strong> Rechtsklick auf Obsidian → "Bei Login öffnen" (Mac) oder Autostart (Windows).</span>
+  <span class="en"><strong>Open Obsidian on startup.</strong> Right-click Obsidian → "Open at Login" (Mac) or Autostart (Windows).</span></li>
+  <li><span class="de"><strong>Alles in die Daily Note.</strong> Du weißt nicht wo etwas hin soll? In die Daily Note. Sortieren kannst du später.</span>
+  <span class="en"><strong>Everything into the Daily Note.</strong> Don't know where something goes? Daily Note. You can sort later.</span></li>
+  <li><span class="de"><strong>5 Minuten am Ende des Tages.</strong> Daily Note durchsehen, Links setzen, fertig.</span>
+  <span class="en"><strong>5 minutes at end of day.</strong> Review daily note, add links, done.</span></li>
+</ol>
+
+<div class="callout" style="background: rgba(63, 185, 80, 0.1); border-left-color: var(--green);">
+  <span class="de">✅ <strong>Nicht perfektionieren.</strong> Dein Vault darf chaotisch sein. Die Links und die Suche (Modul 4) sorgen dafür, dass du alles wiederfindest. Keine Angst vor Unordnung.</span>
+  <span class="en">✅ <strong>Don't perfectionist.</strong> Your vault can be messy. Links and search (Module 4) ensure you find everything. Don't fear disorder.</span>
+</div>
+
+<h2><span class="de">🏋️ Challenge</span><span class="en">🏋️ Challenge</span></h2>
+
+<ol>
+  <li><span class="de">Aktiviere Daily Notes und erstelle deine heutige Tagesnotiz</span><span class="en">Enable Daily Notes and create today's daily note</span></li>
+  <li><span class="de">Erstelle einen <code>Templates/</code> Ordner mit einem Daily Note Template</span><span class="en">Create a <code>Templates/</code> folder with a Daily Note template</span></li>
+  <li><span class="de">Erstelle ein Meeting-Template</span><span class="en">Create a Meeting template</span></li>
+  <li><span class="de">Teste: Neue Notiz → Template einfügen (<code>Cmd/Ctrl + P</code> → "Insert template")</span><span class="en">Test: New note → Insert template (<code>Cmd/Ctrl + P</code> → "Insert template")</span></li>
+  <li><span class="de">Stelle Obsidian so ein, dass es beim Hochfahren öffnet</span><span class="en">Set Obsidian to open on startup</span></li>
+</ol>
+
+<div class="nav-buttons">
+  <a href="modul2.html" class="btn-secondary"><span class="de">← Modul 2</span><span class="en">← Module 2</span></a>
+  <a href="modul4.html" class="btn-primary"><span class="de">Modul 4 →</span><span class="en">Module 4 →</span></a>
+</div>
+
+</main>
+
+<footer role="contentinfo">
+  <span class="de">Teil von <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+  <span class="en">Part of <a href="https://janrummel.github.io/ai-learning/">AI Learning</a></span>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.documentElement.lang = lang;
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+  document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+  document.querySelectorAll('.de').forEach(el => el.style.display = lang === 'de' ? '' : 'none');
+  try { localStorage.setItem('lang', lang); } catch(e) {}
+}
+(function() {
+  var lang = 'de'; try { lang = localStorage.getItem('lang') || 'de'; } catch(e) {}
+  setLang(lang);
+})();
+</script>
+</body>
+</html>
