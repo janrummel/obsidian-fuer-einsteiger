@@ -1,9 +1,32 @@
 /* ═══════════════════════════════════════════════════════
-   Obsidian für Einsteiger — Kurs-spezifisches CSS
-   Basiert auf shared-style.css
+   Obsidian für Einsteiger — Design System
+   Shared CSS für Landing, Curriculum und Module
    ═══════════════════════════════════════════════════════ */
 
-/* Progress Bar (kurs-spezifisch) */
+/* Base */
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #7d8590;
+  --accent: #58a6ff; --green: #3fb950; --orange: #d29922;
+  --purple: #a78bfa; --pink: #f778ba;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.7; }
+a { color: var(--accent); }
+main { max-width: 720px; margin: 0 auto; padding: 2rem 2rem 3rem; }
+
+/* Language Toggle */
+.lang-switch { position: fixed; top: 1rem; right: 1rem; display: flex; gap: 0.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 0.2rem; z-index: 100; }
+.lang-switch button { background: none; border: none; color: var(--muted); font-size: 0.75rem; font-weight: 700; cursor: pointer; padding: 0.3rem 0.6rem; border-radius: 6px; }
+.lang-switch button.active { background: var(--accent); color: var(--bg); }
+.lang-switch button:hover:not(.active) { color: var(--text); }
+[lang="de"] .en, [lang="en"] .de { display: none; }
+
+/* Skip Link */
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--accent); color: var(--bg); padding: 0.5rem 1rem; z-index: 200; border-radius: 0 0 8px 0; font-weight: 700; text-decoration: none; }
+.skip-link:focus { top: 0; }
+
+/* Progress Bar */
 .progress-bar { position: fixed; top: 0; left: 0; width: 100%; height: 4px; background: var(--surface); z-index: 150; }
 .progress-bar::after { content: ''; display: block; height: 100%; width: var(--progress, 0%); background: linear-gradient(90deg, var(--accent), var(--green)); border-radius: 0 2px 2px 0; transition: width 0.3s; }
 
@@ -14,6 +37,12 @@
 .hero .subtitle { font-size: 1.15rem; color: var(--muted); max-width: 560px; margin: 0 auto 1rem; }
 .badge { display: inline-block; background: rgba(88,166,255,0.12); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.02em; }
 .value-prop { color: var(--muted); font-size: 0.95rem; line-height: 1.7; max-width: 560px; margin: 0 auto; }
+
+/* Buttons */
+.btn-primary { display: inline-block; background: var(--accent); color: var(--bg); padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: all 0.2s; }
+.btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn-secondary { display: inline-block; background: var(--surface); color: var(--text); border: 1px solid var(--border); padding: 0.75rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: all 0.2s; }
+.btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Journey Map */
 .journey-map { max-width: 720px; margin: 0 auto; padding: 3rem 2rem; text-align: center; }
@@ -62,6 +91,11 @@
 .learning-goals ul { margin: 0; padding-left: 1.25rem; }
 .learning-goals li { font-size: 0.9rem; margin-bottom: 0.3rem; }
 
+/* Callouts */
+.callout { background: rgba(88,166,255,0.08); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; font-size: 0.9rem; line-height: 1.6; }
+.callout-green { background: rgba(63,185,80,0.08); border-left-color: var(--green); }
+.callout-orange { background: rgba(210,153,34,0.08); border-left-color: var(--orange); }
+
 /* Diagrams */
 .diagram { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.82rem; line-height: 1.6; white-space: pre; overflow-x: auto; }
 .diagram-label { font-family: -apple-system, sans-serif; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; display: block; white-space: normal; }
@@ -105,6 +139,12 @@ blockquote { border-left: 3px solid var(--accent); padding: 0.75rem 1.25rem; mar
 
 /* Navigation */
 .nav-buttons { display: flex; justify-content: space-between; margin: 2.5rem 0; flex-wrap: wrap; gap: 1rem; }
+
+/* Footer */
+footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); }
+footer a { color: var(--muted); }
+footer a:hover { color: var(--accent); }
+.footer-line { margin-top: 0.3rem; }
 
 /* ─── RESPONSIVE ─── */
 
