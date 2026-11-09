@@ -63,7 +63,7 @@ Verwandte Kurse:
 
 ## Technologie
 
-Statisches HTML + CSS + JavaScript. Kein Build-System, keine Abhängigkeiten. Gehostet auf GitHub Pages.
+Statisches HTML + CSS + JavaScript. Kein Build-System, keine Abhängigkeiten. Gehostet auf GitHub Pages, direkt aus Branch `main`, Ordner `/`.
 
 ## Autor
 
